@@ -23,8 +23,10 @@
             <img src="{{ url_for('static', filename='img/eu.png')}}" alt="" >
             <div class="textos">
                 <h2> WESLEY SILVA DE ARAUJO</h2>
-                <p>Tenho 21 anos, estudo python a 1 ano,<br> e estou Trabalhando como freelancer a 7 meses.<br>
-                Dominando cada dia mais a ferramenta do python.</p>
+                <p>Tenho 21 anos, estudo Python há 1 ano e trabalho<br> como freelancer há 7 meses.
+                    A cada dia, aprimorei<br> meu domínio sobre Python e busco sempre melhorar,<br> adquirindo novas
+                    habilidades e tornando o código<br> o mais limpo possível!</p>
+                    
             </div>
         </div>
     </section>
@@ -61,7 +63,7 @@
 
     <section id="projetos" class="projetos">
         <h2>PROJETOS</h2>
-        <p class="aviso">Se demorar para entrar no site, meu deploy e gratuito,<br> então o primeiro acesso do dia demora um poquinho..</p>
+        <p class="aviso">Se demorar para entrar no site, é porque meu deploy é gratuito,<br> então o primeiro acesso do dia demora um poquinho...</p>
 
 
         <div class="projetos-grid">
@@ -73,7 +75,7 @@
 
             <div class="projeto">
                 <h3><a href="https://projeto-login-tm28.onrender.com">Sistema de Login</a></h3>
-                <p>Site com sistema de autenticação seguro usando Flask, SQLite, JWT e proteção de senhas com Bcrypt.</p>
+                <p>Site com sistema de autenticação seguro usando Flask, SQLite, Flask-Login e proteção de senhas com hash seguro (Werkzeug, SHA-256).</p>
             </div>
         </div>
     </section>
@@ -90,19 +92,13 @@
             <textarea name="mensagem" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-        {% if sucesso %}
-        <div id="sucesso">
-            <p>Email enviado com sucesso! Obrigado pelo seu contato!</p>
-        {% elif sucesso == False %}
-            <p>Houve um erro ao enviar o email. Tente novamente mais tarde.</p>
-
         </div>
-        {% endif %}
+
         
         <div class="redes-sociais">
-            <a href="https://github.com/SEU_GITHUB" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/SEU_LINKEDIN" target="_blank">LinkedIn</a>
-            <a href="mailto:wesley159silva@gmail.com">Email</a>
+            <a href="https://github.com/WesleyZeus" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/wesley-silva-543928301/" target="_blank">LinkedIn</a>
+            <a href="mailto:wesley159silva@gmail.com?subject=Contato pelo site">Email</a>
         </div>
     </section>
 
