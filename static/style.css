@@ -1,0 +1,251 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(3, 161, 3);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;   
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    transition: 0.10s;
+
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 255, 0);
+    border-radius: 5px;
+    font-size: 25px;
+    transform: scale(1.05);
+}
+
+.titulo {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 100vh;
+    gap: 100px;
+    
+
+
+}
+
+h1 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 20px;
+    
+}
+h1 span{
+    color: rgb(0, 255, 0);
+    margin-left: 10px;
+
+}
+.titulo img {
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    
+}
+
+.textos {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textos p {
+    margin-top: 10px;
+    color: #2bff00;
+    
+
+}
+    
+
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.sobre ul {
+padding: 20px 10px;
+
+}
+
+.sobre li {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    text-align: center;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: rgb(9, 255, 0);
+
+}
+.projetos h2 {
+    margin-bottom: 100px;
+}
+.projetos p {
+    display: flex;
+    
+
+    
+}
+
+.projetos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+    
+
+
+}
+
+.projeto {
+    background-color: #ffffff;
+    color: black ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 10px 6px 10px rgba(0, 255, 0, 0.568);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+
+}
+.projeto h3 {
+    padding-bottom: 30px;
+
+}
+.projeto h3 a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    
+}
+
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.contato form {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+
+}
+
+.contato form input {
+    border-radius: 5px;
+    padding: 10px;
+}
+.contato form button {
+    border-radius: 9px;
+    padding: 10px;
+    background-color:  rgb(9, 255, 0);
+    font-size: 20px;
+
+
+}
+.contato form button:hover {
+    transform: scale(1.05);
+    background-color:  rgb(5, 151, 0);
+
+    
+}
+
+.contato form textarea{
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.txt {
+    margin-bottom: 100px;
+
+}
+
+.txt h2 {
+    padding-bottom: 50px;
+    color: #080808;
+    font-size: 40px;
+    text-shadow: 3px -1px 4px #2bff00; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 18px; 
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: #48ff00; 
+    transform: translateY(-5px); 
+}
+
+html {
+    scroll-behavior: smooth;
+}

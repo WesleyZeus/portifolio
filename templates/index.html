@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1>PROGAMADOR<span> BACK-END</span></h1>
+
+        <div class="titulo">
+            <img src="{{ url_for('static', filename='img/eu.png')}}" alt="" >
+            <div class="textos">
+                <h2> WESLEY SILVA DE ARAUJO</h2>
+                <p>Tenho 21 anos, estudo python a 1 ano,<br> e estou Trabalhando como freelancer a 7 meses.<br>
+                Dominando cada dia mais a ferramenta do python.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2> SOBRE MIM</h2>
+        <h3>Back-end</h3>
+        <ul>
+            <li>Python (Flask, SQLAlchemy, Marshmallow)</li>
+            <li>Desenvolvimento de APIs RESTful</li>
+            <li>Autenticação e Segurança (JWT, Hashlib, Bcrypt)</li>
+            <li>Testes Automatizados com Pytest</li>
+        </ul>
+
+        <h3>Banco de Dados</h3>
+        <ul>
+            <li>SQLite e SQLAlchemy para modelagem e gerenciamento</li>
+            <li>CRUD otimizado para performance</li>
+            <li>Validação e migração de dados</li>
+        </ul>
+
+        <h3>Versionamento e Deploy</h3>
+        <ul>
+            <li>Git e GitHub para controle de versão</li>
+            <li>Estruturação de projetos seguindo boas práticas</li>
+        </ul>
+
+        <h3>Front-end</h3>
+        <ul>
+            <li>HTML, CSS e JavaScript</li>
+            <li>Integração do front-end com APIs</li>
+        </ul>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>PROJETOS</h2>
+        <p class="aviso">Se demorar para entrar no site, meu deploy e gratuito,<br> então o primeiro acesso do dia demora um poquinho..</p>
+
+
+        <div class="projetos-grid">
+
+            <div class="projeto">
+                <h3><a href="https://projeto-de-api-livros.onrender.com">API de Gerenciamento de Livros</a></h3>
+                <p>Uma API RESTful desenvolvida com Flask e SQLAlchemy para gerenciar livros, incluindo cadastro e busca.</p>
+            </div>
+
+            <div class="projeto">
+                <h3><a href="https://projeto-login-tm28.onrender.com">Sistema de Login</a></h3>
+                <p>Site com sistema de autenticação seguro usando Flask, SQLite, JWT e proteção de senhas com Bcrypt.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="txt">
+            <h2>CONTATO</h2>
+            <p>Entre em contato para oportunidades ou para bater um papo sobre tecnologia.</p>
+        </div>
+
+        <form action="https://formspree.io/f/manewpnd" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        {% if sucesso %}
+        <div id="sucesso">
+            <p>Email enviado com sucesso! Obrigado pelo seu contato!</p>
+        {% elif sucesso == False %}
+            <p>Houve um erro ao enviar o email. Tente novamente mais tarde.</p>
+
+        </div>
+        {% endif %}
+        
+        <div class="redes-sociais">
+            <a href="https://github.com/SEU_GITHUB" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/SEU_LINKEDIN" target="_blank">LinkedIn</a>
+            <a href="mailto:wesley159silva@gmail.com">Email</a>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
